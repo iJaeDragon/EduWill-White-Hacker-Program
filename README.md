@@ -1,6 +1,6 @@
 # EduWill White Hacker Program
 
-# 🛡️ Eduwill 화이트해커 양성과정 정리
+# 🛡️ Eduwill 화이트해커 프로그램 정리
 
 ## 📘 목적 / Purpose
 
