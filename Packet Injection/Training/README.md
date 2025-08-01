@@ -20,4 +20,11 @@
 
 이 사이트에서 다양한 웹 취약점과 함께 패킷 인젝션 실습을 진행할 예정이다.
 
+
+<img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/6dd68231-13ca-4840-9c08-4d437acddce0" />
+
 ---
+
+## 실습
+
+<img width="1098" height="817" alt="image" src="https://github.com/user-attachments/assets/4d266e9c-af53-4c0a-ac07-58f275caf6bd" />
