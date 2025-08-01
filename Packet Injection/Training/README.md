@@ -27,4 +27,16 @@
 
 ## 실습
 
-<img width="1098" height="817" alt="image" src="https://github.com/user-attachments/assets/4d266e9c-af53-4c0a-ac07-58f275caf6bd" />
+### step 1. 브라우저 오픈
+
+Proxy -> Intercept -> Open browser
+
+<img width="1093" height="814" alt="image" src="https://github.com/user-attachments/assets/a4a64e16-cfd3-4462-a44f-5707c496f842" />
+
+### step 2. 페이지 열기
+
+<img width="1919" height="1032" alt="image" src="https://github.com/user-attachments/assets/bfccf1c1-5bad-45d9-bc3f-a336f7fa4664" />
+
+### step 3. 패킷 인터렉션
+
+시나리오 - 회원가입 화면에서 요구하는 규칙을 지켜지지 않은 데이터로 회원가입을 진행한다.
