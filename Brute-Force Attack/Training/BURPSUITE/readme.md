@@ -44,28 +44,31 @@ Proxy -> Intercept -> Open browser
  - 다양한 패스워드로 로그인을 시도하여 타겟의 비밀번호 파악
  - 파악한 계정 정보로 로그인 진행
 
+
 ##### Intercept On 활성화
 
 <img width="1096" height="814" alt="image" src="https://github.com/user-attachments/assets/d79708e7-9c48-400e-97bb-994915e08f83" />
+
 
 ##### 로그인 요청 시 서버로 전송되는 데이터를 확인하기 위해 임의 값으로 로그인을 시도한다.
 
 <img width="488" height="564" alt="image" src="https://github.com/user-attachments/assets/7b3ffff3-891b-43d4-b5a6-47ada74fe5f8" />
 
+
 ##### 전달하려는 요청을 확인하고 Send to Intruder 클릭
 
 <img width="1091" height="818" alt="image" src="https://github.com/user-attachments/assets/1dfcdd2e-8dcc-48c0-8dda-269ef1c7a900" />
 
+
 ##### 파라미터를 분석하여 대입할 항목을 찾아 payload position을 추가한다.
 
-<img width="626" height="502" alt="image" src="https://github.com/user-attachments/assets/1fb8b88c-6075-4b07-bcbf-e5276a0cf48f" />
+<img width="627" height="556" alt="image" src="https://github.com/user-attachments/assets/77bb5306-9dbf-4f01-ac11-3b630a5169ea" />
+
 
 ##### Payload configuration에 시도할 패스워드 목록을 입력한다.
 
-(시도할 패스워드 목록)
-
 ```
-
+  #시도할 패스워드 목록
   qwer1234
   1q2w3e4r
   11111
@@ -73,8 +76,10 @@ Proxy -> Intercept -> Open browser
   123
   1234
   123456
-
 ```
 
 <img width="1095" height="814" alt="image" src="https://github.com/user-attachments/assets/4d401a9d-c525-4d3a-bdf4-65a2006a33be" />
 
+##### Start Attack을 통해 입력된 패스워드 목록을 통해 무차별 로그인 시도를 진행하고, 성공한 Payload를 확인한다.
+
+<img width="911" height="834" alt="image" src="https://github.com/user-attachments/assets/2767068e-d349-4255-935c-0dc06451f003" />
