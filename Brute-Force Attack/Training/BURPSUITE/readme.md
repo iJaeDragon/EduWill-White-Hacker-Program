@@ -47,8 +47,7 @@ Proxy -> Intercept -> Open browser
 
 ##### Intercept On 활성화
 
-<img width="1096" height="814" alt="image" src="https://github.com/user-attachments/assets/d79708e7-9c48-400e-97bb-994915e08f83" />
-
+<img width="1005" height="746" alt="image" src="https://github.com/user-attachments/assets/13331181-3bf7-42ce-9647-e9ae1e74b93a" />
 
 ##### 로그인 요청 시 서버로 전송되는 데이터를 확인하기 위해 임의 값으로 로그인을 시도한다.
 
