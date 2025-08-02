@@ -41,3 +41,6 @@ Burp Suite의 Intruder는 요청 내 특정 파라미터에 대해 **자동으�
 ---
 
 > ✅ 참고: 단순한 브루트 포스 외에도 Burp의 Intruder는 타이밍 공격, 인증 우회, 쿠폰 코드 추측 등 다양한 테스트에 응용될 수 있습니다.
+
+
+<img width="1099" height="816" alt="image" src="https://github.com/user-attachments/assets/93d34360-efdc-4a57-b7b9-bfb018ec3452" />
