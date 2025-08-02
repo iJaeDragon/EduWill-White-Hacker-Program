@@ -25,49 +25,68 @@
 
 ---
 
-## 실습
+## 🧪 실습: Burp Suite를 이용한 Brute Force
 
-### step 1. 브라우저 오픈
+---
 
-Proxy -> Intercept -> Open browser
+### ✅ Step 1. Burp 브라우저 실행
 
-<img width="1093" height="814" alt="image" src="https://github.com/user-attachments/assets/a4a64e16-cfd3-4462-a44f-5707c496f842" />
+- Burp Suite에서 `Proxy → Intercept → Open Browser` 클릭  
+<img width="600" alt="open-browser" src="https://github.com/user-attachments/assets/a4a64e16-cfd3-4462-a44f-5707c496f842" />
 
-### step 2. 페이지 열기
+---
 
-<img width="1919" height="1032" alt="image" src="https://github.com/user-attachments/assets/bfccf1c1-5bad-45d9-bc3f-a336f7fa4664" />
+### ✅ Step 2. 대상 페이지 접속
 
-### step 3. 브루트 포스
+- Burp 브라우저에서 **OWASP Juice Shop** 사이트 접속  
+<img width="100%" alt="open-page" src="https://github.com/user-attachments/assets/bfccf1c1-5bad-45d9-bc3f-a336f7fa4664" />
 
-#### 시나리오 
- - 타겟의 아이디는 알고 있지만 비밀번호를 모르는 상태
- - 다양한 패스워드로 로그인을 시도하여 타겟의 비밀번호 파악
- - 파악한 계정 정보로 로그인 진행
+---
 
+### ✅ Step 3. Brute Force 수행
 
-##### Intercept On 활성화
+#### 🔍 시나리오
 
-<img width="1005" height="746" alt="image" src="https://github.com/user-attachments/assets/13331181-3bf7-42ce-9647-e9ae1e74b93a" />
+- 타겟 계정의 **아이디는 알고 있음**
+- 다양한 패스워드를 이용해 로그인을 반복 시도
+- 비밀번호를 알아낸 후 로그인 성공 확인
 
-##### 로그인 요청 시 서버로 전송되는 데이터를 확인하기 위해 임의 값으로 로그인을 시도한다.
+---
 
-<img width="488" height="564" alt="image" src="https://github.com/user-attachments/assets/7b3ffff3-891b-43d4-b5a6-47ada74fe5f8" />
+#### ① Intercept On 설정
 
+- Burp Proxy에서 `Intercept is on` 상태 확인  
+<img width="600" alt="intercept-on" src="https://github.com/user-attachments/assets/13331181-3bf7-42ce-9647-e9ae1e74b93a" />
 
-##### 전달하려는 요청을 확인하고 Send to Intruder 클릭
+---
 
-<img width="1091" height="818" alt="image" src="https://github.com/user-attachments/assets/1dfcdd2e-8dcc-48c0-8dda-269ef1c7a900" />
+#### ② 임의 로그인 시도
 
+- 존재하는 사용자 ID와 임의의 비밀번호로 로그인  
+<img width="300" alt="fake-login" src="https://github.com/user-attachments/assets/7b3ffff3-891b-43d4-b5a6-47ada74fe5f8" />
 
-##### 파라미터를 분석하여 대입할 항목을 찾아 payload position을 추가한다.
+---
 
-<img width="627" height="556" alt="image" src="https://github.com/user-attachments/assets/77bb5306-9dbf-4f01-ac11-3b630a5169ea" />
+#### ③ 요청 캡처 및 Intruder로 전송
 
+- 서버로 전송되는 로그인 요청을 Burp에서 확인하고  
+  **[Send to Intruder]** 버튼 클릭  
+<img width="600" alt="send-to-intruder" src="https://github.com/user-attachments/assets/1dfcdd2e-8dcc-48c0-8dda-269ef1c7a900" />
 
-##### Payload configuration에 시도할 패스워드 목록을 입력한다.
+---
+
+#### ④ Payload 위치 설정
+
+- 비밀번호 입력 필드에 `§`를 삽입하여 공격 위치 설정  
+<img width="400" alt="payload-position" src="https://github.com/user-attachments/assets/77bb5306-9dbf-4f01-ac11-3b630a5169ea" />
+
+---
+
+#### ⑤ Payload 구성
+
+- 공격에 사용할 패스워드 목록을 입력
 
 ```
-  #시도할 패스워드 목록
   qwer1234
   1q2w3e4r
   11111
@@ -76,9 +95,13 @@ Proxy -> Intercept -> Open browser
   1234
   123456
 ```
+<img width="600" alt="payload-config" src="https://github.com/user-attachments/assets/ebbbd6b3-7d12-4537-af2d-b111b231c0b9" />
 
-<img width="1092" height="813" alt="image" src="https://github.com/user-attachments/assets/ebbbd6b3-7d12-4537-af2d-b111b231c0b9" />
+---
 
-##### Start Attack을 통해 입력된 패스워드 목록을 통해 무차별 로그인 시도를 진행하고, 성공한 Payload를 확인한다.
+#### ⑥ 공격 실행 및 결과 분석
+  **[Start Attack]** 클릭
 
-<img width="911" height="834" alt="image" src="https://github.com/user-attachments/assets/2767068e-d349-4255-935c-0dc06451f003" />
+  응답 길이, 상태 코드 등을 기반으로 성공 요청 확인
+
+<img width="600" alt="attack-results" src="https://github.com/user-attachments/assets/2767068e-d349-4255-935c-0dc06451f003" />
