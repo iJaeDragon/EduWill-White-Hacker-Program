@@ -44,3 +44,14 @@ Proxy -> Intercept -> Open browser
  - 다양한 패스워드로 로그인을 시도하여 타겟의 비밀번호 파악
  - 파악한 계정 정보로 로그인 진행
 
+##### Intercept On 활성화
+
+<img width="1096" height="814" alt="image" src="https://github.com/user-attachments/assets/d79708e7-9c48-400e-97bb-994915e08f83" />
+
+##### 로그인 요청 시 서버로 전송되는 데이터를 확인하기 위해 임의 값으로 로그인을 시도한다.
+
+<img width="488" height="564" alt="image" src="https://github.com/user-attachments/assets/7b3ffff3-891b-43d4-b5a6-47ada74fe5f8" />
+
+##### 전달하려는 요청을 확인하고 Send to Intruder 클릭
+
+<img width="1091" height="818" alt="image" src="https://github.com/user-attachments/assets/1dfcdd2e-8dcc-48c0-8dda-269ef1c7a900" />
