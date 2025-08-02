@@ -55,3 +55,26 @@ Proxy -> Intercept -> Open browser
 ##### 전달하려는 요청을 확인하고 Send to Intruder 클릭
 
 <img width="1091" height="818" alt="image" src="https://github.com/user-attachments/assets/1dfcdd2e-8dcc-48c0-8dda-269ef1c7a900" />
+
+##### 파라미터를 분석하여 대입할 항목을 찾아 payload position을 추가한다.
+
+<img width="626" height="502" alt="image" src="https://github.com/user-attachments/assets/1fb8b88c-6075-4b07-bcbf-e5276a0cf48f" />
+
+##### Payload configuration에 시도할 패스워드 목록을 입력한다.
+
+(시도할 패스워드 목록)
+
+```
+
+  qwer1234
+  1q2w3e4r
+  11111
+  22222
+  123
+  1234
+  123456
+
+```
+
+<img width="1095" height="814" alt="image" src="https://github.com/user-attachments/assets/4d401a9d-c525-4d3a-bdf4-65a2006a33be" />
+
