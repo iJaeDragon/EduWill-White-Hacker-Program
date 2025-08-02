@@ -77,7 +77,7 @@ Proxy -> Intercept -> Open browser
   123456
 ```
 
-<img width="1095" height="814" alt="image" src="https://github.com/user-attachments/assets/4d401a9d-c525-4d3a-bdf4-65a2006a33be" />
+<img width="1092" height="813" alt="image" src="https://github.com/user-attachments/assets/ebbbd6b3-7d12-4537-af2d-b111b231c0b9" />
 
 ##### Start Attack을 통해 입력된 패스워드 목록을 통해 무차별 로그인 시도를 진행하고, 성공한 Payload를 확인한다.
 
