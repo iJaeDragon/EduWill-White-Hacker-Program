@@ -22,3 +22,8 @@ docker run -d -p 8080:80 --name dvwa vulnerables/web-dvwa
 > ✅ 실행 후 브라우저에서 `http://localhost:8080` 접속
 
 ---
+
+<img width="1919" height="988" alt="image" src="https://github.com/user-attachments/assets/cae1d240-2cd6-4790-b7d9-44733a4ae7a7" />
+
+
+## 
