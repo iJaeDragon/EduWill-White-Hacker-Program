@@ -19,7 +19,7 @@
 > ❗ 아래 링크는 오픈된 GitHub 저장소의 예시이며, 공식 소프트웨어가 아니며 신뢰할 수 없습니다.  
 > 사용 또는 다운로드는 법적 책임을 수반하며, 연구 목적 외의 실사용은 절대 금지됩니다.
 
-- [https://github.com/evildevill/instahack](https://github.com/evildevill/instahack)
+- [[https://github.com/evildevill/instahack](https://github.com/deathsec/instagram-py)]
 
 > 🔗 이들 저장소는 종종 삭제되거나 변경될 수 있으며, 일부는 악성 코드가 포함된 경우도 존재합니다.
 
