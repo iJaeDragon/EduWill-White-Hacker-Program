@@ -13,6 +13,9 @@
 아래 명령어를 사용하여 **Docker**로 DVWA를 손쉽게 실행할 수 있습니다.
 ```
 docker run -d -p 8080:80 --name dvwa vulnerables/web-dvwa
+
+# 종료
+docker stop dvwa
 ```
 - `-d`: 백그라운드 모드로 실행  
 - `-p 8080:80`: 호스트의 포트 8080을 컨테이너의 포트 80에 매핑  
