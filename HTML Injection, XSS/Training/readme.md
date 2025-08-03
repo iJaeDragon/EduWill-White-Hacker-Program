@@ -12,7 +12,9 @@
 
 아래 명령어를 사용하여 **Docker**로 DVWA를 손쉽게 실행할 수 있습니다.
 ```
-docker run -d -p 8080:80 --name dvwa vulnerables/web-dvwa
+# 버프수트에서 8080 포트를 사용하고 있어서 8081로 설정함.
+# 8080 포트 사용 시 인터셉트가 걸리지 않을 수 있음.
+docker run -d -p 8081:80 --name dvwa vulnerables/web-dvwa 
 
 # 종료
 docker stop dvwa
