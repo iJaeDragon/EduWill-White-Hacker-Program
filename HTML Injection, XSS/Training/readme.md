@@ -20,7 +20,7 @@ docker run -d -p 8081:80 --name dvwa vulnerables/web-dvwa
 docker stop dvwa
 ```
 - `-d`: 백그라운드 모드로 실행  
-- `-p 8080:80`: 호스트의 포트 8080을 컨테이너의 포트 80에 매핑  
+- `-p 8081:80`: 호스트의 포트 8081을 컨테이너의 포트 80에 매핑  
 - `--name dvwa`: 컨테이너 이름을 `dvwa`로 지정  
 - `vulnerables/web-dvwa`: DVWA 공식 Docker 이미지
 
