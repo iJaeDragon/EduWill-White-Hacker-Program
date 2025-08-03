@@ -23,7 +23,6 @@ docker run -d -p 8080:80 --name dvwa vulnerables/web-dvwa
 
 ---
 
-<img width="1919" height="988" alt="image" src="https://github.com/user-attachments/assets/cae1d240-2cd6-4790-b7d9-44733a4ae7a7" />
-
+<img width="1917" height="943" alt="image" src="https://github.com/user-attachments/assets/204c9320-f501-41ee-ab1b-eeaf48642727" />
 
 ## 
