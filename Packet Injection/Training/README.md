@@ -37,7 +37,7 @@ Proxy -> Intercept -> Open browser
 
 <img width="1919" height="1032" alt="image" src="https://github.com/user-attachments/assets/bfccf1c1-5bad-45d9-bc3f-a336f7fa4664" />
 
-### step 3. 패킷 인터렉션
+### step 3. 패킷 인터셉트
 
 #### 시나리오 - 회원가입 화면에서 요구하는 규칙을 지키지 않은 데이터로 회원가입을 진행한다.
 
