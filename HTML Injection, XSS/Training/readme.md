@@ -24,7 +24,7 @@ docker stop dvwa
 - `--name dvwa`: 컨테이너 이름을 `dvwa`로 지정  
 - `vulnerables/web-dvwa`: DVWA 공식 Docker 이미지
 
-> ✅ 실행 후 브라우저에서 `http://localhost:8080` 접속
+> ✅ 실행 후 브라우저에서 `http://localhost:8081` 접속
 
 ---
 
